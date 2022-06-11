@@ -1,0 +1,122 @@
+:root {
+  --jeopardy-blue: #071277;
+  --score: #d69f4c;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-family: 'Odibee Sans', cursive;
+  color: var(--score);
+  font-size: 5rem;
+  margin: 5px;
+}
+
+#game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.points {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--score);
+  font-size: 3rem;
+  text-shadow: 4px 2px black;
+  margin: 5px 0 0 0;
+}
+
+#score-txt {
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+  color: lavenderblush;
+  padding: 0;
+  margin: 0;
+  text-shadow: 4px 2px black;
+}
+
+#category-txt {
+  text-transform: capitalize;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+  color: lavenderblush;
+  margin: 0;
+}
+
+.qna-txt {
+  font-family: 'Cinzel', serif;
+  color: lavenderblush;
+  text-shadow: 4px 2px 5px black;
+}
+
+.answer-txt {
+  padding: 25%;
+}
+
+.box-style {
+  background-color: var(--jeopardy-blue);
+  width: 38vw;
+  height: 350px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 0 2%;
+  margin: 20px;
+}
+
+#game-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3rem;
+  color: lavenderblush;
+  margin: 6px;
+  padding: 1%;
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 12px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#increase {
+  background: #48AD59;
+}
+
+#increase:hover {
+  background: #61BD70;
+}
+
+#decrease {
+  background: #B92A27;
+}
+
+#decrease:hover {
+  background: #D43835;
+}
+
+#reset {
+  background: var(--score);
+}
+
+#reset:hover {
+  background: #DDAF69;
+}
+
+#get-q, #get-a {
+  background: #2A8AA2;
+}
+
+#get-q:hover, #get-a:hover {
+  background: #3CB0CD;
+}
